@@ -51,6 +51,12 @@ namespace PMIDE
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                    name: "Task",
+                    pattern: "{controller=Task}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                    name: "Project",
+                    pattern: "{controller=Project}/{action=Index}/{id?}");
             });
         }
     }
